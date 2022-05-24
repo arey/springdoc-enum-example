@@ -2,7 +2,17 @@
 
 Change springdoc version in build.gradle.kts to test this.
 
-Build with ./gradlew clean build and then run with java -jar build/libs/
+#####Build with 
+
+```
+./gradlew clean build
+```
+
+#####and then run with
+
+```
+java -jar build/libs/enum-problem-example-0.0.1-SNAPSHOT.jar
+```
 
 ### In 1.6.6 there is drop-down (so enum from @schema-annotation is generated correctly)
 
