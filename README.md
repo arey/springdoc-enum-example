@@ -2,13 +2,13 @@
 
 Change springdoc version in build.gradle.kts to test this.
 
-#####Build with 
+##### Build with 
 
 ```
 ./gradlew clean build
 ```
 
-#####and then run with
+##### and then run with
 
 ```
 java -jar build/libs/enum-problem-example-0.0.1-SNAPSHOT.jar
