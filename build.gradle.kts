@@ -15,10 +15,13 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
-    // Change version to 1.6.7 or 1.6.8 to test problem with enum in swagger ui
+    // Change version to 1.6.7 or 1.6.13 to test problem with enum in swagger ui
     implementation("org.springdoc:springdoc-openapi-ui:1.6.6")
     implementation("org.springdoc:springdoc-openapi-data-rest:1.6.6")
 
-    //implementation("org.springdoc:springdoc-openapi-ui:1.6.8")
-    //implementation("org.springdoc:springdoc-openapi-data-rest:1.6.8")
+//    implementation("org.springdoc:springdoc-openapi-ui:1.6.7")
+//    implementation("org.springdoc:springdoc-openapi-data-rest:1.6.7")
+
+//    implementation("org.springdoc:springdoc-openapi-ui:1.6.13")
+//    implementation("org.springdoc:springdoc-openapi-data-rest:1.6.13")
 }

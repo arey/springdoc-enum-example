@@ -22,7 +22,7 @@ java -jar build/libs/enum-problem-example-0.0.1-SNAPSHOT.jar
 
 ![img_166.png](img_166.png)
 
-### In 1.6.8 there isn't drop-down (so enum from @schema-annotation isn't generated as expected)
+### In 1.6.7 and 1.6.13 there isn't drop-down (so enum from @schema-annotation isn't generated as expected)
 
 ```
 [{"name":"fooBar","in":"path","required":true,"schema":{"type":"string"}}]

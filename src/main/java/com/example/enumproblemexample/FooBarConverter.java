@@ -8,11 +8,7 @@ public class FooBarConverter implements Converter<String, FooBar> {
 
   @Override
   public FooBar convert(String source) {
-    return FooBar.valueOf(fooBarToUpperCase(source));
+    return FooBar.fromValue(source);
   }
 
-  private String fooBarToUpperCase(String source) {
-    var upper = source.toUpperCase();
-    return upper.replace("-", "_");
-  }
 }

@@ -1,14 +1,38 @@
 package com.example.enumproblemexample;
 
-import io.swagger.v3.oas.annotations.media.Schema;
+import javax.annotation.Generated;
 
-@Schema(type = "String", allowableValues = { "foo", "bar" })
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen")
 public enum FooBar {
-    FOO,
-    BAR;
+    FOO("foo"),
+    BAR("bar");
 
-    public String toLowerCase() {
-        var lower = this.name().toLowerCase();
-        return lower.replace("_", "-");
+    private String value;
+
+    FooBar(String value) {
+        this.value = value;
+    }
+
+    @JsonValue
+    public String getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
+
+    @JsonCreator
+    public static FooBar fromValue(String value) {
+        for (FooBar b : FooBar.values()) {
+            if (b.value.equals(value)) {
+                return b;
+            }
+        }
+        throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 }
